@@ -4,30 +4,112 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <title>Madapdap Resettlement Senior High School</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 
     
 </head>
 <body>
+
     <div class="homebg">
         <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
             <a href="#"><h2 class="logo"><img src="schoollogo.jpg"><span>MaRSHS</span></h2></a>  
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a class="active" href="#">Home</a></li>
                 <li>
-                    <a href="#">Announcement  <i class="fas fa-caret-down"></i></a>
+                    <a href="#">News & Events</a>
                         <div class="dropdown">
                             <ul>
-                                <li><a href="#">walang pasok bukas</a></li>
-                                <li><a href="#">Oh my god</a></li>
+                                <li><a href="#">ewan ko</a></li>
+                                <li><a href="#">o hindi ko alam</a></li>
+                                <li><a href="#">pwede bang wag muna</a></li>
+                                <li><a href="#">nating pag usapan</a></li>
+                                <li><a href="#">wag mo ng itanong sa akin</a></li>
+                                <li><a href="#">hindi ko din naman</a></li>
+                                <li><a href="#">sasabihin</a></li>
                             </ul>
+                        </div>
                 </li>
-                <li><a href="#">About</a></li>
-                <li><a href="login.html">Log In</a></li>
+                <li>
+                    <a href="#">About</a>
+                    <div class="dropdown">
+                            <ul>
+                                <li><a href="#">ewan ko</a></li>
+                                <li><a href="#">o hindi ko alam</a></li>
+                                <li><a href="#">pwede bang wag muna</a></li>
+                                <li><a href="#">nating pag usapan</a></li>
+                                <li><a href="#">wag mo ng itanong sa akin</a></li>
+                                <li><a href="#">hindi ko din naman</a></li>
+                                <li><a href="#">sasabihin</a></li>
+                            </ul>
+                    </div>
+                </li>
+                <li><a href="loginicon.html">Log In</a></li>
             </ul>
         </nav>
-    </div>
-    
+
+        <div class="h1">
+            <h1 id="school-name">Madapdap Resettlement<br> Senior High School</h1>
+            <h4 id="school-address"><i class="fa-solid fa-location-dot"></i> San Fernando Avenue, Madapdap Resettlement, Brgy. Dapdap,<br> Mabalacat City, Pampanga</h4>
+        </div>
+
+        <div class="container">
+            <div class="swiper">
+                <div><h1 id="strand">Strands</h1></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h1>Science, Technology, Engineering, and Mathematics (STEM)</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Humanities and Social Sciences (HUMSS)</h1>
+                    </div>
+                    <div class="swiper-slide">
+                      <h1>Accountancy, Business, and Management (ABM)</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>General Academic Strand (GAS)</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Home Economics (HE)</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Information communication technology (ICT)</h1>
+                    </div>
+                    <div class="swiper-slide">
+                        <h1>Technical-Vocational-Livelihood (TVL)</h1>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> 
+            </div>
+        </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction:false,
+    },
+
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+</script>
 </body>
 </html>

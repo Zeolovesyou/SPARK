@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=GFS+Didot&family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
 
 *{
   padding: 0;
@@ -29,24 +31,24 @@ nav{
   padding-top: 35px;
   padding-left: 3%;
   padding-right: 3%;
-  background:black;
   background-color: #025043;
 }
 
 .logo {
   color: #fff 
   font-size: 30px;
-  margin-bottom: 30px;
+  position: relative;
+  margin-bottom: 20px;
 }
 
-img {
-  height: 45px;
-  width: 45px;
+.logo img {
+  height: 40px;
+  width: 40px;
   float: left;
 }
 
 span {
-  font-family:'EB Garamond',sans-serif;
+  font-family: 'Arvo', serif;
   font-size: 35px;
 }
 
@@ -68,7 +70,7 @@ nav ul li a{
   text-decoration:none;
   font-size: 18px;
   font-weight: bold;
-  padding: 20px; 
+  padding: 30px; 
   transition: all 0.3s;
 }
 
@@ -78,24 +80,163 @@ nav ul li a:hover{
   text-decoration: none;
 }
 
+a.active,a:hover{
+  transition: .5s ;
+}
+
 .dropdown {
   display:none;
 }
 
 nav ul li:hover .dropdown {
-    display:block;
-    position:absolute;
-    left:0;
-    top: 50px;
-    background-color:#025043;
+  display:block;
+  position:absolute;
+  left:0;
+  top: 40px;
+  background-color:#025043;
 }
 
 nav ul li:hover .dropdown ul li a{
   display:block;
   margin: 10px;
+  width:100%;
+  padding:10px;
 }
 
-nav ul li:hover .dropdown ul li a{
-  width:150px;
-  padding:10px;
+.h1{
+  float: right;
+  text-align: justify;
+  font-size: 40px;
+  color: white;
+  margin-top: 80px;
+  margin-right: 20px;
+}
+
+#school-name{
+  font-family:'Josefin Sans',sans-serif;
+}
+
+#school-address{
+  font-size: 25px;
+  font-family:'Josefin Sans',sans-serif;
+}
+
+.swiper{
+  height: 700px;
+  width: 750px;
+  top: 200px;
+  margin-left: 110px;
+  display: inline-flex;
+  position: absolute;
+  background-color: lightblue;
+  border-radius: 10px;
+} 
+
+#strand{
+  margin-left: 10px;
+  margin-top: 12px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 585px;
+  padding-left: 20px;
+  border-radius: 20px;
+}
+
+.swiper-wrapper{
+  margin-right: 700px;
+}
+
+.swiper-slide {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  color: white;
+  font-size: 20px;
+  padding-top: 150px;
+  padding-left: 40px;
+
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 1022px){
+ .logo{
+  font-size: 10%;
+  position: relative;
+}
+
+ nav ul li a{
+  font-size: 16px;
+ }
+
+ nav ul li:hover .dropdown {
+  overflow: hidden;
+ }
+
+ .container{
+  overflow: hidden;
+ }
+
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  ul{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #025043;
+    top: 100px;
+    left: -100%;
+    transition: all 1s;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+  }
+
+  #check:checked ~ul{
+    left: 0;
+  }
+
+  a.active,a:hover{
+    transition: .5s ;
+  }
+
+  .h1{
+    float: left;
+    text-align: left;
+    color: white;
+    margin-top: 50px;
+  }
+
+  #school-name{
+    font-size: 80%;
+  }
+
+  #school-address{
+    font-size: 40%;
+  }
+
+  .container{
+  overflow: hidden;
+ }
 }
