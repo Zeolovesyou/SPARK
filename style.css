@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=GFS+Didot&family=Gloock&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Josefin+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 *{
   padding: 0;
@@ -32,6 +33,7 @@ nav{
   padding-left: 3%;
   padding-right: 3%;
   background-color: #025043;
+  font-size: 13px;
 }
 
 .logo {
@@ -105,11 +107,10 @@ nav ul li:hover .dropdown ul li a{
 
 .h1{
   float: right;
-  text-align: justify;
   font-size: 40px;
   color: white;
-  margin-top: 80px;
-  margin-right: 20px;
+  margin-top: 50px;
+  margin-right: 60px;
 }
 
 #school-name{
@@ -121,25 +122,34 @@ nav ul li:hover .dropdown ul li a{
   font-family:'Josefin Sans',sans-serif;
 }
 
+.motto{
+  font-size: 40px;
+  font-family:  'Permanent Marker', cursive;
+}
+
+.motto{
+  position: relative;
+}
+
 .swiper{
   height: 700px;
   width: 750px;
   top: 200px;
-  margin-left: 110px;
-  display: inline-flex;
+  margin-left: 90px;
+  display: block;
   position: absolute;
   background-color: lightblue;
   border-radius: 10px;
 } 
 
 #strand{
+  width: 730px;
   margin-left: 10px;
   margin-top: 12px;
   background-color: white;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-right: 585px;
-  padding-left: 20px;
+  padding-left: 16px;
   border-radius: 20px;
 }
 
@@ -154,7 +164,7 @@ nav ul li:hover .dropdown ul li a{
   color: white;
   font-size: 20px;
   padding-top: 150px;
-  padding-left: 40px;
+  padding-left: 50px;
 
 }
 
@@ -187,7 +197,7 @@ nav ul li:hover .dropdown ul li a{
  }
 
  .container{
-  overflow: hidden;
+  content-visibility: hidden;
  }
 
 }
@@ -237,6 +247,6 @@ nav ul li:hover .dropdown ul li a{
   }
 
   .container{
-  overflow: hidden;
+  content-visibility: hidden;
  }
 }
